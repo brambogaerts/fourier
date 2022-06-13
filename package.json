@@ -17,6 +17,7 @@
   },
   "scripts": {
     "start": "http-server",
+    "dev": "webpack-dev-server --config webpack.config.js",
     "webpack": "webpack || exit 1",
     "webpack-prod": "webpack --mode=production || exit 1",
     "makehtml": "node script/make-html",
@@ -42,13 +43,15 @@
     "npm-watch": "^0.6.0",
     "regenerator-runtime": "^0.13.5",
     "reload": "^3.0.4",
-    "showdown": "^1.9.1",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "showdown": "^1.9.1"
   },
   "dependencies": {
+    "@turf/turf": "^6.5.0",
     "browser-image-compression": "1.0.11",
     "fft.js": "^4.0.3",
-    "matrix-multiplication": "^0.5.2"
+    "matrix-multiplication": "^0.5.2",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
   }
 }
